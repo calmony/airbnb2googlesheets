@@ -1,2 +1,3 @@
-# airbnb2googlesheets
-Takes Airbnb reservation details and adds it to googlesheets
+# Airbnb Calendar to Google Sheets
+
+This project fetches your Airbnb calendar data and updates a Google Sheet with check-ins and check-outs.
