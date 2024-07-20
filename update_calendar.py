@@ -1,5 +1,4 @@
-
-**`update_calendar.py`**
+## **`update_calendar.py`**
 
 The main script that fetches the Airbnb calendar data, parses it, and updates the Google Sheet.
 
@@ -17,7 +16,7 @@ def fetch_ical(url):
     response = requests.get(url)
     return response.text
 
-ical_url = os.getenv('ICAL_URL')
+ical_url = os.getenv('ICAL_URL', 'https://www.airbnb.com/calendar/ical/731804139379900149.ics?s=0ac7fa2e10fa0870da3efa9241ce6a08')
 ical_data = fetch_ical(ical_url)
 
 # Parse iCal data
@@ -60,4 +59,3 @@ def update_sheet(service, spreadsheet_id, range_name, reservations):
     print('{0} cells updated.'.format(result.get('updatedCells')))
 
 update_sheet(service, spreadsheet_id, range_name, reservations)
-
