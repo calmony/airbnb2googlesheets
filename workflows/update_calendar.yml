@@ -30,4 +30,3 @@ jobs:
         run: |
           echo "${{ secrets.CREDENTIALS_JSON }}" > credentials.json
           python update_calendar.py
-
