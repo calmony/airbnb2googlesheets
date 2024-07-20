@@ -1,5 +1,5 @@
 
-5. **`update_calendar.py`**
+**`update_calendar.py`**
 
 The main script that fetches the Airbnb calendar data, parses it, and updates the Google Sheet.
 
